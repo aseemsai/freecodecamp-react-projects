@@ -1,9 +1,12 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 
+// CSS
+import './index.css';
+
 function BookList() {
   return (
-    <section>
+    <section className="bookList">
       <Book />
       <Book />
       <Book />
@@ -18,7 +21,7 @@ function BookList() {
 }
 const Book = () => {
   return (
-    <article>
+    <article className="book">
       <Image />
       <Title />
       <Author />
@@ -30,8 +33,8 @@ const Image = () => {
     <img
       src="https://images-eu.ssl-images-amazon.com/images/I/91bYsX41DVL._AC_UL900_SR900,600_.jpg"
       alt="Atomic Habits"
-      width="200px"
-      height="auto"
+      width="180px"
+      height="200px"
     />
   );
 };
